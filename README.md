@@ -10,10 +10,14 @@ MarkTree is a dev power tool for effortlessly copying any aspect of source contr
 
 **Pro Feature Highlight:**
 
-- **Copy Symbol and References**: Copy a symbol and all of it's workspace references recursively into Markdown snippets.
-- **Multi-Commit Git Diff**: Easily copy diffs for multiple commits at once—merge them all into a single Markdown snippet for thorough reviews or AI assistance.
+- **Copy Staged Git Changes**: Gather your staged Git changes into Markdown diffs—perfect for partial commits or quick reviews.
+- **Copy Git Diffs for Selected Commits**: Use a QuickPick to select multiple commits, then MarkTree gathers the `git show` output for each commit and merges them into one Markdown snippet.
 - **Priority License Validation**: Faster updates and priority support.
 - And more coming soon!
+
+** Coming Soon!**
+
+- **Copy Symbol and References**: Copy a symbol and all of it's references recursively into Markdown snippets.
 
 Click the image or link above to get MarkTree Pro. Once purchased, you'll receive a license key to unlock all Pro features directly in your existing MarkTree installation.
 
@@ -30,13 +34,9 @@ Click the image or link above to get MarkTree Pro. Once purchased, you'll receiv
 - **Copy Problems from Active File**: Copies all errors/warnings (diagnostics) for the currently active file, including relevant code snippets.
 - **Copy Selected as Markdown**: Copies your current selection as a single Markdown code block.
 - **Copy Symbol from Active File**: Lets you pick any symbol (class, function, etc.) and copy it as a Markdown code block.
+- **Copy Terminal Selection**: Copy selected terminal text as a Markdown code block.
 - **.gitignore Support**: Optionally respect your workspace’s `.gitignore` files and custom ignore entries.
 - **Binary File Skipping**: Optionally skip binary files when copying directory contents.
-- **Copy Staged Git Changes**: Gather your staged Git changes into Markdown diffs—perfect for partial commits or quick reviews.
-
-### Pro-Only Feature
-
-- **Copy Git Diffs for Selected Commits**: Use a QuickPick to select multiple commits, then MarkTree gathers the `git show` output for each commit and merges them into one Markdown snippet.
 
 ---
 
@@ -53,6 +53,8 @@ If you frequently work with multiple files at once, MarkTree lets you copy the c
 MarkTree can collect and copy all **diagnostics** (errors, warnings, etc.) for your currently active file—complete with **line numbers**, **messages**, and **code snippet** context.
 
 When you run **Copy Problems from Active File**, you’ll get a Markdown snippet like:
+
+---
 
 #### Problems for /path/to/file.ts
 
@@ -99,7 +101,7 @@ Each file is formatted as a code block with automatically detected language:
 
 ```ts
 export const multiply = (a: number, b: number) => {
-  console.log('Breakpoint in multiply');
+  console.log("Breakpoint in multiply");
   return a + b;
 };
 ```
@@ -149,7 +151,7 @@ export const multiply = (a: number, b: number) => {
 
 ```ts
 export const multiply = (a: number, b: number) => {
-  console.log('Breakpoint in multiply');
+  console.log("Breakpoint in multiply");
   return a + b;
 };
 ```
