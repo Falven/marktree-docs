@@ -190,7 +190,7 @@ No special dependencies are required. Just install and start copying Markdown tr
 
 ## Known Issues
 
-No known issues at this time. Please report any problems or feature requests on our [GitHub repository](https://github.com/Falven/marktree/issues).
+No known issues at this time. Please report any problems or feature requests on our [GitHub repository](https://github.com/Falven/marktree-docs/issues).
 
 ---
 
@@ -201,3 +201,9 @@ Like the extension? Consider supporting it with a donation. Your support helps k
 **Enjoy using MarkTree! 🌳**
 
 Looking for more power? Don’t forget to check out [**MarkTree Pro**](https://buymeacoffee.com/lkpuiu42en/e/395935) for advanced Git diffing and more!
+
+## Privacy Policy
+
+MarkTree does **not** transmit or store anything you copy.
+
+See the full policy → [Privacy Policy](PRIVACY_POLICY.md).
