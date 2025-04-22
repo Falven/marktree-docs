@@ -10,16 +10,17 @@ MarkTree is a dev power tool for effortlessly copying any aspect of source contr
 
 **Pro Feature Highlight:**
 
+- **Generate Structure from Clipboard Tree**: Copy a Markdown‑style directory tree to your clipboard, right‑click any folder, and instantly scaffold the entire structure—folders and files—inside your workspace.
 - **Copy Staged Git Changes**: Gather your staged Git changes into Markdown diffs—perfect for partial commits or quick reviews.
 - **Copy Git Diffs for Selected Commits**: Use a QuickPick to select multiple commits, then MarkTree gathers the `git show` output for each commit and merges them into one Markdown snippet.
 - **Priority License Validation**: Faster updates and priority support.
 - And more coming soon!
 
-** Coming Soon!**
+**Coming Soon!**
 
-- **Copy Symbol and References**: Copy a symbol and all of it's references recursively into Markdown snippets.
+- **Copy Symbol and References**: Copy a symbol and all of its references recursively into Markdown snippets.
 
-Click the image or link above to get MarkTree Pro. Once purchased, you'll receive a license key to unlock all Pro features directly in your existing MarkTree installation.
+Click the image or link above to get MarkTree Pro. Once purchased, you'll receive a license key to unlock all Pro features directly in your existing MarkTree installation.
 
 ---
 
