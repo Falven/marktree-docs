@@ -13,6 +13,7 @@ MarkTree is a dev power tool for effortlessly copying any aspect of source contr
 - **Generate Structure from Clipboard Tree**: Copy a Markdown‑style directory tree to your clipboard, right‑click any folder, and instantly scaffold the entire structure—folders and files—inside your workspace.
 - **Copy Staged Git Changes**: Gather your staged Git changes into Markdown diffs—perfect for partial commits or quick reviews.
 - **Copy Git Diffs for Selected Commits**: Use a QuickPick to select multiple commits, then MarkTree gathers the `git show` output for each commit and merges them into one Markdown snippet.
+- **Chunk Editor by Model Size**: Choose a model (with its max message tokens from an up‑to‑date list), pick a sentence/code splitter, optionally add per‑chunk instructions, and MarkTree will split the active editor (or selection) into token‑budgeted chunks, each opened in its own editor tab. Prevents overrunning model limits while prepping prompts.
 - **Priority License Validation**: Faster updates and priority support.
 - And more coming soon!
 
@@ -102,7 +103,7 @@ Each file is formatted as a code block with automatically detected language:
 
 ```ts
 export const multiply = (a: number, b: number) => {
-  console.log("Breakpoint in multiply");
+  console.log('Breakpoint in multiply');
   return a + b;
 };
 ```
@@ -152,7 +153,7 @@ export const multiply = (a: number, b: number) => {
 
 ```ts
 export const multiply = (a: number, b: number) => {
-  console.log("Breakpoint in multiply");
+  console.log('Breakpoint in multiply');
   return a + b;
 };
 ```
