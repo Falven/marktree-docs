@@ -39,8 +39,16 @@ Click the image or link above to get MarkTree Pro. Once purchased, you'll recei
 - **Copy Terminal Selection**: Copy selected terminal text as a Markdown code block.
 - **.gitignore Support**: Optionally respect your workspace’s `.gitignore` files and custom ignore entries.
 - **Binary File Skipping**: Optionally skip binary files when copying directory contents.
+- **Live Token Counter**: Status bar item that shows the active editor’s LLM token count with a click-to-change model picker. If you have a selection, it shows **Selected:** token count for that selection; otherwise it counts the whole document. Uses OpenRouter’s live model list (cached for 6 hours), remembers your last chosen model per workspace, and keeps working from cache if a refresh fails—while surfacing the last fetch error in the tooltip.
+- **Clear Model Cache**: Command palette entry to clear the cached model metadata (forces the next fetch from OpenRouter).
 
 ---
+
+### Live Token Counter
+
+Live token count for the active editor (or the current selection) using your chosen model.
+
+![Live Token Counter](images/token_counter.gif)
 
 ### Copying Open Tabs as Markdown
 
