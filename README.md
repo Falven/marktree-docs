@@ -1,219 +1,188 @@
-# MarkTree
+<p align="center">
+  <img src="images/logo_transparent.png" alt="MarkTree logo" width="220" />
+</p>
 
-MarkTree is a dev power tool for effortlessly copying any aspect of source control: directory structures, file contents, tabs, and even Git diffs, into Markdown. Take advantage of the latest LLMs or Agentic systems like V0, Gemini, GPT 4.1 or new Claude releases without waiting for GitHub Copilot or Cursor support. Provide advanced context beyond what these IDEs support.
+<h1 align="center">MarkTree</h1>
 
-[![Get MarkTree Pro](images/logo.png)](https://buymeacoffee.com/lkpuiu42en/e/395935)
+<p align="center">
+  <strong>MarkTree is basically a Swiss Army Knife for AI Development</strong> — built for working with <em>any</em> agentic coding system.<br/>
+  Copy clean, LLM-ready Markdown context from VS Code in seconds. It will save you countless hours.
+</p>
 
-# Pro
-
-[**MarkTree Pro**](https://buymeacoffee.com/lkpuiu42en/e/395935) unlocks extra features for advanced users. If you’re constantly handling multiple commits, deeply reviewing diffs, or wanting the ultimate control in how you share your code with AI or collaborators, MarkTree Pro has you covered.
-
-**Pro Feature Highlight:**
-
-- **Generate Structure from Clipboard Tree**: Copy a Markdown‑style directory tree to your clipboard, right‑click any folder, and instantly scaffold the entire structure—folders and files—inside your workspace.
-- **Copy Staged Git Changes**: Gather your staged Git changes into Markdown diffs—perfect for partial commits or quick reviews.
-- **Copy Git Diffs for Selected Commits**: Use a QuickPick to select multiple commits, then MarkTree gathers the `git show` output for each commit and merges them into one Markdown snippet.
-- **Chunk Editor by Model Size**: Choose a model (with its max message tokens from an up‑to‑date list), pick a sentence/code splitter, optionally add per‑chunk instructions, and MarkTree will split the active editor (or selection) into token‑budgeted chunks, each opened in its own editor tab. Prevents overrunning model limits while prepping prompts.
-- **Priority License Validation**: Faster updates and priority support.
-- And more coming soon!
-
-**Coming Soon!**
-
-- **Copy Symbol and References**: Copy a symbol and all of its references recursively into Markdown snippets.
-
-Click the image or link above to get MarkTree Pro. Once purchased, you'll receive a license key to unlock all Pro features directly in your existing MarkTree installation.
+<p align="center">
+  <em>Directory trees • file contents • selections • tabs • symbols • Problems panel • Git diffs • token counting • chunking</em>
+</p>
 
 ---
 
-# Free
+## What you get
 
-- **Copy Md Tree**: Copies a directory’s tree structure as Markdown.
-- **Copy Md Files**: Copies the contents of files as Markdown code blocks.
-- **Copy Md Tree & Files**: Copies both the directory tree and file contents.
-- **Copy Tabs**: Copies the contents of all currently open file-based tabs.
-- **Copy Tabs to the Right**: Copies only the open file-based tabs to the right of the current active tab.
-- **Copy Tabs to the Left**: Copies only the open file-based tabs to the left of the current active tab.
-- **Copy Problems from Active File**: Copies all errors/warnings (diagnostics) for the currently active file, including relevant code snippets.
-- **Copy Selected as Markdown**: Copies your current selection as a single Markdown code block.
-- **Copy Symbol from Active File**: Lets you pick any symbol (class, function, etc.) and copy it as a Markdown code block.
-- **Copy Terminal Selection**: Copy selected terminal text as a Markdown code block.
-- **.gitignore Support**: Optionally respect your workspace’s `.gitignore` files and custom ignore entries.
-- **Binary File Skipping**: Optionally skip binary files when copying directory contents.
-- **Live Token Counter**: Status bar item that shows the active editor’s LLM token count with a click-to-change model picker. If you have a selection, it shows **Selected:** token count for that selection; otherwise it counts the whole document. Uses OpenRouter’s live model list (cached for 6 hours), remembers your last chosen model per workspace, and keeps working from cache if a refresh fails—while surfacing the last fetch error in the tooltip.
-- **Clear Model Cache**: Command palette entry to clear the cached model metadata (forces the next fetch from OpenRouter).
+MarkTree turns your workspace context into **paste-perfect Markdown**:
+
+- **Right-click → Copy → Paste into your agent** (ChatGPT / Claude / Gemini / Copilot Chat / Cursor / Continue / etc.)
+- **Readable, structured output** with paths + fenced code blocks
+- **Local-first**: your code stays on your machine (see [Privacy](#privacy--security))
 
 ---
 
-### Live Token Counter
+## See it in action
 
-Live token count for the active editor (or the current selection) using your chosen model.
+### Copy a Markdown directory tree
 
-![Live Token Counter](images/token_counter.gif)
+<img src="images/copy_md_tree.gif" alt="Copy Markdown tree demo" />
 
-### Copying Open Tabs as Markdown
+### Copy file contents as Markdown
 
-If you frequently work with multiple files at once, MarkTree lets you copy the contents of all currently open file-based tabs as Markdown. You can also limit copying to tabs on the right or left of the active one. This makes it easy to share precisely the subset you need.
+<img src="images/copy_md_files.gif" alt="Copy Markdown files demo" />
 
-- **Copy All Tabs**: Copies all open file-based tabs.
-- **Copy Tabs to the Right**: Copy a selection of files opened to the right of the current focus.
-- **Copy Tabs to the Left**: Quickly capture the files opened to the left side.
+### Copy a tree _and_ the files under it
 
-### Copying Problems from the Active File
+<img src="images/copy_md_tree_and_files.gif" alt="Copy Markdown tree and files demo" />
 
-MarkTree can collect and copy all **diagnostics** (errors, warnings, etc.) for your currently active file—complete with **line numbers**, **messages**, and **code snippet** context.
+### Live token counter (status bar)
 
-When you run **Copy Problems from Active File**, you’ll get a Markdown snippet like:
+<img src="images/token_counter.gif" alt="Token counter demo" />
 
 ---
 
-#### Problems for /path/to/file.ts
+## Why MarkTree (especially for AI / agentic workflows)
 
-##### Issue 1 of 2
+When you’re working with an AI assistant, the biggest time sink is always the same: **collecting and formatting context**.
 
-- **Severity**: Error
-- **Line**: 12, **Column**: 5
-- **Source**: eslint
-- **Message**: Unexpected token
-- **Code**: 1234
+MarkTree removes the glue work:
 
-```ts
-// Lines 10-14:
-10  const foo = {
-11    bar: 42
-12    baz: 99 // <-- Missing comma
-13  };
-14
-```
+- **No more “copy file… paste… repeat…”**
+- **No more hand-writing directory trees**
+- **No more “what files am I missing?”**
+- **No more guessing token limits**
+
+You get fast, consistent context that agents can actually use.
 
 ---
 
-## Copying Md Tree
+## Quick start
 
-```sh
-/Users/falven/Source/turborepo/examples/basic/packages/lib
-├── src
-│   └── index.ts
-├── package.json
-└── tsconfig.json
-
-2 directories, 3 files
-```
-
-![Copy Md Tree](images/copy_md_tree.gif)
+1. Install **MarkTree** from the VS Code Marketplace.
+2. In the Explorer, **right‑click** a folder or file:
+   - **MarkTree → Copy Md Tree**
+   - **MarkTree → Copy Md File(s)**
+   - **MarkTree → Copy Md Tree & Files**
+3. Paste into your agent/chat/issue/PR. Done.
 
 ---
 
-## Copying Md Files
+## Commands (what’s included)
 
-Each file is formatted as a code block with automatically detected language:
+### Core “copy context” commands (Free)
 
-`src/index.ts`
+- **Copy Md Tree** — copy a directory outline as Markdown
+- **Copy Md File(s)** — copy one or many files as Markdown (with code fences)
+- **Copy Md Tree & Files** — include the tree preview + the file contents
+- **Copy Active File as Markdown**
+- **Copy Selected as Markdown** (editor selection)
+- **Copy as Markdown** (terminal selection)
+- **Copy Problems for Active File**
+- **Copy All Problems** (workspace Problems panel)
+- **Copy Symbol as Markdown** (pick a function/class/etc.)
+- **Copy all tabs as Md**
+- **Copy tabs to the left as Md**
+- **Copy tabs to the right as Md**
+- **Add to MD Ignores** / **Remove from MD Ignores** (quickly tweak ignore list)
 
-```ts
-export const multiply = (a: number, b: number) => {
-  console.log('Breakpoint in multiply');
-  return a + b;
-};
-```
+### AI utilities (Free)
 
-`package.json`
+- **Select Token Counter Model** — pick a model to count tokens accurately
+- **Clear Model Cache** — refetch model metadata (used by the token counter)
+
+### Pro features (requires a MarkTree Pro license)
+
+- **(Pro) Copy Staged Git Changes as Markdown**
+- **(Pro) Copy Selected Git Commits** (copies diffs for chosen commits)
+- **(Pro) Generate Structure from Clipboard Tree** (scaffold folders/files from a Markdown tree)
+- **(Pro) Chunk Editor by Model Size** (split big files/selections into model-friendly chunks)
+
+---
+
+## Output format (what you paste)
+
+MarkTree generates Markdown like:
+
+- Optional **tree preview** (in a fenced block)
+- Then **one section per file**, with a path header and a fenced code block
+
+This makes it easy for agents (and humans) to navigate context without losing file boundaries.
+
+---
+
+## Configuration
+
+Open **Settings** and search for “MarkTree”, or add to your `settings.json`:
 
 ```json
 {
-  "name": "@repo/lib",
-  "version": "0.0.0",
-  "type": "module",
-  ...
+  "marktree.gitignore": true,
+  "marktree.ignoreBinary": true,
+  "marktree.additionalIgnores": [".git", ".vscode/", "pnpm-lock.yaml"],
+  "marktree.showCopyingMessage": false,
+  "marktree.showCopiedMessage": true,
+  "marktree.showTokenCounter": true
 }
 ```
 
-`tsconfig.json`
+Notes:
 
-```json
-{
-  "extends": "@repo/typescript-config/base.json",
-  "compilerOptions": {
-    "outDir": "dist",
-    "sourceRoot": "../../packages/lib/src"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
-}
-```
-
-![Copy Md Files](images/copy_md_files.gif)
+- **`marktree.gitignore`**: respects your repo ignore rules (great for keeping prompts clean).
+- **`marktree.ignoreBinary`**: skips binary contents (so you don’t paste gibberish).
+- **`marktree.additionalIgnores`**: your “prompt hygiene” list (build outputs, lockfiles, generated folders, etc.).
 
 ---
 
-### Copying Md Tree & Files Together
+## MarkTree Pro
 
-```sh
-/Users/falven/Source/turborepo/examples/basic/packages/lib
-├── src
-│   └── index.ts
-├── package.json
-└── tsconfig.json
+MarkTree Pro is for people who live in agentic loops and want fewer interruptions:
 
-2 directories, 3 files
-```
+- Paste **staged diffs** or **selected commit diffs** instantly
+- Turn a **Markdown tree into a real scaffold** in seconds
+- **Chunk large files** to fit model limits (with tokenizer + overlap controls)
 
-`src/index.ts`
+To activate:
 
-```ts
-export const multiply = (a: number, b: number) => {
-  console.log('Breakpoint in multiply');
-  return a + b;
-};
-```
-
-`package.json`
-
-```json
-{
-  "name": "@repo/lib",
-  "version": "0.0.0",
-  ...
-}
-```
-
-`tsconfig.json`
-
-```json
-{
-  "extends": "@repo/typescript-config/base.json",
-  "compilerOptions": {
-    "outDir": "dist",
-    "sourceRoot": "../../packages/lib/src"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
-}
-```
-
-![Copy Md Tree & Files](images/copy_md_tree_and_files.gif)
+1. Run **“MarkTree: Enter License Key”**
+2. Paste your key
+3. Pro commands unlock automatically
 
 ---
 
-## Requirements
+## Privacy & Security
 
-No special dependencies are required. Just install and start copying Markdown trees and files!
+MarkTree is designed to be **local-first**:
 
-## Known Issues
+- Workspace content (paths, files, tree, selections, diagnostics, Git output) is processed **on your machine**
+- MarkTree **does not** collect analytics/telemetry
+- Content is copied only to **your clipboard**
 
-No known issues at this time. Please report any problems or feature requests on our [GitHub repository](https://github.com/Falven/marktree-docs/issues).
+Network access happens only for:
+
+- **Pro license validation** (your license key is sent to the licensing endpoint)
+- **Model metadata fetch** for the token counter (fetched from OpenRouter model listings)
+
+Read the full policy in **`PRIVACY_POLICY.md`**.
 
 ---
 
-Like the extension? Consider supporting it with a donation. Your support helps keep the project alive and allows me to dedicate more time to its development. Thank you!
+## Troubleshooting (common gotchas)
 
-<a href="https://www.buymeacoffee.com/lkpUiU42EN" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 150px !important;"></a>
+- **“Why didn’t it copy some files?”**
+  Check `marktree.gitignore` and `marktree.additionalIgnores`.
 
-**Enjoy using MarkTree! 🌳**
+- **“Binary file: content not displayed”**
+  That’s intentional when `marktree.ignoreBinary` is enabled.
 
-Looking for more power? Don’t forget to check out [**MarkTree Pro**](https://buymeacoffee.com/lkpuiu42en/e/395935) for advanced Git diffing and more!
+- **Token counter says “Models unavailable”**
+  The model list fetch failed (network/offline). Try again later or run **Clear Model Cache**.
 
-## Privacy Policy
+---
 
-MarkTree does **not** transmit or store anything you copy.
+## Support
 
-See the full policy → [Privacy Policy](PRIVACY_POLICY.md).
+If MarkTree saves you time, consider upgrading to Pro or sharing it with your team. 🙂
