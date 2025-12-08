@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo_transparent.png" alt="MarkTree logo" width="220" />
+  <img src="images/logo_transparent_dark.png" alt="MarkTree logo" width="220" />
 </p>
 
 <h1 align="center">MarkTree</h1>
@@ -125,7 +125,10 @@ Open **Settings** and search for “MarkTree”, or add to your `settings.json`:
   "marktree.additionalIgnores": [".git", ".vscode/", "pnpm-lock.yaml"],
   "marktree.showCopyingMessage": false,
   "marktree.showCopiedMessage": true,
-  "marktree.showTokenCounter": true
+  "marktree.showTokenCounter": true,
+  "marktree.showFilePath": true,
+  "marktree.showCodeLineNumbers": true,
+  "marktree.showFilenameLineNumbers": true
 }
 ```
 
@@ -134,6 +137,9 @@ Notes:
 - **`marktree.gitignore`**: respects your repo ignore rules (great for keeping prompts clean).
 - **`marktree.ignoreBinary`**: skips binary contents (so you don’t paste gibberish).
 - **`marktree.additionalIgnores`**: your “prompt hygiene” list (build outputs, lockfiles, generated folders, etc.).
+- **`marktree.showFilePath`**: adds the file path above each copied code block.
+- **`marktree.showCodeLineNumbers`**: includes line numbers inside copied code fences for files, selections, and Problems output.
+- **`marktree.showFilenameLineNumbers`**: appends line/column details after filenames when copying Problems.
 
 ---
 
