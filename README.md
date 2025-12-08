@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo_transparent_dark.png" alt="MarkTree logo" width="220" />
+  <img src="images/logo_transparent_dark.jpeg" alt="MarkTree logo" width="220" />
 </p>
 
 <h1 align="center">MarkTree</h1>
