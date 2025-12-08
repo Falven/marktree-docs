@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="images/logo_transparent_dark.jpeg" alt="MarkTree logo" width="220" />
-</p>
-
 <h1 align="center">MarkTree</h1>
 
 <p align="center">
