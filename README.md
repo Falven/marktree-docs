@@ -77,6 +77,7 @@ And if you use GitHub Copilot: the **Copilot Proxy** lets you bring that same Co
 - **Copy Md File(s)** — copy one or many files as Markdown (with code fences)
 - **Copy Md Tree & Files** — include the tree preview + the file contents
 - **Copy Active File as Markdown**
+- **Copy Active Diff as Markdown** — choose changes-only, added-only, or removed-only from the open diff view
 - **Copy Selected as Markdown** (editor selection)
 - **Copy as Markdown** (terminal selection)
 - **Copy Problems for Active File**
