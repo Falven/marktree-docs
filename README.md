@@ -284,7 +284,7 @@ Network access happens only for:
 
 - **Pro license validation** (your license key is sent to the licensing endpoint)
 - **Model metadata fetch** for the token counter (fetched from OpenRouter model listings)
-- **Copilot Proxy** (only if you start it): requests to the proxy are forwarded to VS Code’s Language Model API/GitHub Copilot. MarkTree is not designed to store your prompts.
+- **Copilot Proxy** (only if you start it): requests to the proxy are forwarded to VS Code’s Language Model API/GitHub Copilot. It now runs as a separate, high-performance local proxy process so your editor stays responsive. MarkTree is not designed to store your prompts.
 
 Read the full policy in **`PRIVACY_POLICY.md`**.
 

@@ -8,6 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Add “Copy Active Diff as Markdown” with quick-pick to copy merged changes, added-only, or removed-only lines from the active diff editor.
 
+## [0.7.5] - 2025-12-10
+
+- Run the Copilot proxy in its own high-performance external process for better responsiveness.
+
 ## [0.7.4] - 2025-12-10
 
 - Add Copilot proxy start/stop/show commands, settings, and docs for 0.7.4.
