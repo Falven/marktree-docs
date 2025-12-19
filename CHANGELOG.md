@@ -4,6 +4,21 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.2] - 2025-12-19
+
+- Updated CHANGELOG.md.
+
+## [0.8.1] - 2025-12-19
+
+- Fix multi-cursor selection headers by labeling each selected line range instead of collapsing to a single span.
+
+## [0.8.0] - 2025-12-15
+
+- Add a quick-pick scope selector for “Copy Tabs as Markdown” (all/left/right of the active tab).
+- Add structured copy-worker logging with configurable log level and log path settings.
+- Improve Copilot Proxy request normalization, tool handling, and streaming output for Anthropic/OpenAI routes.
+- Package docs assets in published artifacts and streamline build/pack scripts.
+
 ## [0.7.5] - 2025-12-10
 
 - Add “Copy Active Diff as Markdown” with quick-pick to copy merged changes, added-only, or removed-only lines from the active diff editor.
