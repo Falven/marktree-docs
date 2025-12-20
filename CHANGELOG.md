@@ -4,6 +4,10 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.3] - 2025-12-19
+
+- Rename “Copy Active File as Markdown” to “Copy Active Tab as Markdown” and handle diffs within tab copy flows.
+
 ## [0.8.2] - 2025-12-19
 
 - Updated CHANGELOG.md.
