@@ -82,9 +82,7 @@ And if you use GitHub Copilot: the **Copilot Proxy** lets you bring that same Co
 - **Copy Problems for Active File**
 - **Copy All Problems** (workspace Problems panel)
 - **Copy Symbol as Markdown** (pick a function/class/etc.)
-- **Copy all tabs as Md**
-- **Copy tabs to the left as Md**
-- **Copy tabs to the right as Md**
+- **Copy Tab(s) as Markdown** (quick-pick: Copy Active Tab as Markdown, Copy all open tabs in this window, Copy tabs to the left of the active tab, Copy tabs to the right of the active tab)
 - **Add to MD Ignores** / **Remove from MD Ignores** (quickly tweak ignore list)
 
 ### AI utilities (Free)
