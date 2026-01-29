@@ -4,6 +4,10 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.5] - 2026-01-29
+
+Consolidate problem-copy commands into a quick-pick selector.
+
 ## [0.8.4] - 2026-01-22
 
 Consolidate "Copy Tab(s) as Markdown" commands.

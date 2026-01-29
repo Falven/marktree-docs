@@ -78,8 +78,7 @@ And if you use GitHub Copilot: the **Copilot Proxy** lets you bring that same Co
 - **Copy Md Tree & Files** — include the tree preview + the file contents
 - **Copy Selected as Markdown** (editor selection)
 - **Copy as Markdown** (terminal selection)
-- **Copy Problems for Active File**
-- **Copy All Problems** (workspace Problems panel)
+- **Copy Problems as Markdown** (quick-pick: Copy Problems for Active File, Copy All Problems)
 - **Copy Symbol as Markdown** (pick a function/class/etc.)
 - **Copy Tab(s) as Markdown** (quick-pick: Copy Active Tab as Markdown, Copy all open tabs in this window, Copy tabs to the left of the active tab, Copy tabs to the right of the active tab)
 - **Add to MD Ignores** / **Remove from MD Ignores** (quickly tweak ignore list)
@@ -158,20 +157,17 @@ curl -X POST http://localhost:4000/openai/v1/chat/completions \
 ### “Which model should I use?”
 
 - Pick any model id that appears in:
-
   - the **Show Copilot Models** command, or
   - the `/openai/v1/models` or `/anthropic/v1/models` endpoints.
 
 #### Copilot Proxy model listing endpoints
 
 - **OpenAI-style**: `GET http://localhost:4000/openai/v1/models`
-
   - Returns:
     `{"object": "list", "data": [{ "id", "object": "model", "created", "owned_by" }]}`
   - Works for Copilot and any other models VS Code exposes via the language model API.
 
 - **Anthropic-style**: `GET http://localhost:4000/anthropic/v1/models`
-
   - Returns:
     `{"type": "list", "data": [{ "id", "type": "model", "context_window" }]}`
   - When called through `/anthropic/claude/v1/models`, the list is filtered to Claude-family models; `/anthropic/v1/models` returns all.
@@ -302,7 +298,6 @@ Read the full policy in **`PRIVACY_POLICY.md`**.
 
 - **Proxy returns `model_not_found` (or similar)**
   Use a model id that:
-
   - appears in the **Show Copilot Models** list, or
   - is returned from `/openai/v1/models` or `/anthropic/v1/models` (for example `gpt-5.1`).
     You also need an active GitHub Copilot seat to access Copilot models.
