@@ -221,6 +221,7 @@ Open **Settings** and search for “MarkTree”, or add to your `settings.json`:
 {
   "marktree.gitignore": true,
   "marktree.ignoreBinary": true,
+  "marktree.followSymlinkDirectories": true,
   "marktree.additionalIgnores": [".git", ".vscode/", "pnpm-lock.yaml"],
   "marktree.showCopyingMessage": false,
   "marktree.showCopiedMessage": true,
@@ -242,6 +243,7 @@ Notes:
 
 - **`marktree.gitignore`** / **`marktree.additionalIgnores`**: keep prompts clean by respecting repo ignores and adding your own “prompt hygiene” paths.
 - **`marktree.ignoreBinary`**: skips binary contents (so you don’t paste gibberish).
+- **`marktree.followSymlinkDirectories`**: follows symlinked directories during tree/file copy (including targets outside the workspace); disable it to keep traversal strictly on concrete folders.
 - **`marktree.showFilePath`**, **`marktree.showCodeLineNumbers`**, **`marktree.showFilenameLineNumbers`**: control how paths + line numbers appear in copied Markdown and Problems output.
 - **`marktree.showTokenCounter`**: toggles the live token counter in the status bar.
 - **`marktree.copilotProxy.*`**: controls the Copilot Proxy (port, auto-start, log level, and the status bar toggle).

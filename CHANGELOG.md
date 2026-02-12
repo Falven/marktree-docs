@@ -4,6 +4,13 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.6] - 2026-02-12
+
+- Follow symlinked directories when copying trees/files, including selected symlink folders.
+- Prevent recursive loops and duplicate traversal by skipping repeated real directory targets.
+- Annotate followed symlink directories in tree output as `name -> target`.
+- Add `marktree.followSymlinkDirectories` (default `true`) to control this behavior.
+
 ## [0.8.5] - 2026-01-29
 
 Consolidate problem-copy commands into a quick-pick selector.
