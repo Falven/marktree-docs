@@ -24,6 +24,10 @@ MarkTree turns your workspace context into **paste-perfect Markdown**—and give
 
 ## See it in action
 
+### Copy selection as Markdown
+
+<img src="images/copy_md_selection.gif" alt="Copy Markdown selection demo" />
+
 ### Copy a Markdown directory tree
 
 <img src="images/copy_md_tree.gif" alt="Copy Markdown tree demo" />

@@ -4,6 +4,10 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.7] - 2026-02-12
+
+- Add a new README demo section for “Copy selection as Markdown” with a GIF placeholder.
+
 ## [0.8.6] - 2026-02-12
 
 - Follow symlinked directories when copying trees/files, including selected symlink folders.
