@@ -80,11 +80,11 @@ And if you use GitHub Copilot: the **Copilot Proxy** lets you bring that same Co
 - **Copy Md Tree** — copy a directory outline as Markdown
 - **Copy Md File(s)** — copy one or many files as Markdown (with code fences)
 - **Copy Md Tree & Files** — include the tree preview + the file contents
-- **Copy Selected as Markdown** (editor selection)
+- **Copy Selected as Markdown** (editor selection; in diff editors, choose between copying the selection or the selection diff)
 - **Copy as Markdown** (terminal selection)
 - **Copy Problems as Markdown** (quick-pick: Copy Problems for Active File, Copy All Problems)
 - **Copy Symbol as Markdown** (pick a function/class/etc.)
-- **Copy Tab(s) as Markdown** (quick-pick: Copy Active Tab as Markdown, Copy all open tabs in this window, Copy tabs to the left of the active tab, Copy tabs to the right of the active tab)
+- **Copy Tab(s) as Markdown** (quick-pick: Copy Active Tab as Markdown, Copy all open tabs in this window, Copy tabs to the left of the active tab, Copy tabs to the right of the active tab; when diff tabs are included, choose once whether diff tabs copy as tab default, before, after, or diff)
 - **Add to MD Ignores** / **Remove from MD Ignores** (quickly tweak ignore list)
 
 ### AI utilities (Free)

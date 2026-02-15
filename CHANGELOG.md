@@ -4,6 +4,16 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.8] - 2026-02-15
+
+- In diff editors, update “Copy Selected as Markdown” to prompt whether to copy the selected text or the diff of the selected range.
+- Fix diff-selection copying so original-side text is not truncated when the selected range reaches end-of-line in the modified pane.
+- For “Copy Tab(s) as Markdown”, when the selected scope includes diff tabs, prompt once per run to copy diff tabs as tab default, before, after, or diff.
+- For active-tab diff copying, prompt whether to copy before, after, or diff content.
+- Refactor diff-copy handling into shared helpers so selection/tab/active diff-copy flows use consistent before/after/diff behavior.
+- Fix `Copy as Markdown` terminal command invocation without context args and hide it from the Command Palette to avoid invalid entry-point usage.
+- Update README command descriptions to document diff-aware copy behavior for selected text and tabs.
+
 ## [0.8.7] - 2026-02-12
 
 - Add a new README demo section for “Copy selection as Markdown” with a GIF placeholder.
