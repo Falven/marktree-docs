@@ -4,6 +4,11 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.10] - 2026-02-16
+
+- Fix diff copy line-number rendering so removed lines no longer shift subsequent line numbers.
+- Preserve accurate file-line alignment for merged diff output across selection diff copy and other diff-based Markdown copy flows.
+
 ## [0.8.8] - 2026-02-15
 
 - In diff editors, update “Copy Selected as Markdown” to prompt whether to copy the selected text or the diff of the selected range.
