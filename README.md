@@ -234,7 +234,8 @@ Open **Settings** and search for “MarkTree”, or add to your `settings.json`:
 
   "marktree.showFilePath": true,
   "marktree.showCodeLineNumbers": true,
-  "marktree.showFilenameLineNumbers": true,
+  "marktree.showFilenameLineRanges": true,
+  "marktree.showFilenameColumnRanges": true,
 
   "marktree.copilotProxy.port": 4000,
   "marktree.copilotProxy.autoStart": false,
@@ -248,7 +249,7 @@ Notes:
 - **`marktree.gitignore`** / **`marktree.additionalIgnores`**: keep prompts clean by respecting repo ignores and adding your own “prompt hygiene” paths.
 - **`marktree.ignoreBinary`**: skips binary contents (so you don’t paste gibberish).
 - **`marktree.followSymlinkDirectories`**: follows symlinked directories during tree/file copy (including targets outside the workspace); disable it to keep traversal strictly on concrete folders.
-- **`marktree.showFilePath`**, **`marktree.showCodeLineNumbers`**, **`marktree.showFilenameLineNumbers`**: control how paths + line numbers appear in copied Markdown and Problems output.
+- **`marktree.showFilePath`**, **`marktree.showCodeLineNumbers`**, **`marktree.showFilenameLineRanges`**, **`marktree.showFilenameColumnRanges`**: control how paths + line/column ranges appear in copied Markdown and Problems output.
 - **`marktree.showTokenCounter`**: toggles the live token counter in the status bar.
 - **`marktree.copilotProxy.*`**: controls the Copilot Proxy (port, auto-start, log level, and the status bar toggle).
 

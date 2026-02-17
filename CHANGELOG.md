@@ -4,6 +4,13 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.11] - 2026-02-17
+
+- Replace `marktree.showFilenameLineNumbers` with `marktree.showFilenameLineRanges` and `marktree.showFilenameColumnRanges`.
+- Add end-to-end filename range formatting support with line and column ranges across file, tab, selection, symbol, and worker-based copy flows.
+- Unify diagnostics/problem location header formatting with the same range settings used by other Markdown copy outputs.
+- Normalize range rendering to a compact format and auto-enable line ranges when column ranges are enabled.
+
 ## [0.8.10] - 2026-02-16
 
 - Fix diff copy line-number rendering so removed lines no longer shift subsequent line numbers.
