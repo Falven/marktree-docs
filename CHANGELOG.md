@@ -4,6 +4,10 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.9.0] - 2026-02-18
+
+- Fix “Copy Selected as Markdown” multi-selection ordering so copied output is always sorted by ascending source line numbers (instead of cursor creation/copy order).
+
 ## [0.8.11] - 2026-02-17
 
 - Replace `marktree.showFilenameLineNumbers` with `marktree.showFilenameLineRanges` and `marktree.showFilenameColumnRanges`.
