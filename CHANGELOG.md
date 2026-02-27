@@ -4,6 +4,12 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.9.1] - 2026-02-27
+
+- Fix tab-copy commands in single-file windows by removing the hard workspace-folder requirement for tab discovery.
+- Fix “Copy Tab(s) as Markdown” and “Copy Active Tab as Markdown” to work without an open workspace folder.
+- In no-workspace mode, render copied Markdown file headers with absolute paths while preserving workspace-relative paths when a workspace is open.
+
 ## [0.9.0] - 2026-02-18
 
 - Fix “Copy Selected as Markdown” multi-selection ordering so copied output is always sorted by ascending source line numbers (instead of cursor creation/copy order).
