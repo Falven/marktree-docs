@@ -4,6 +4,14 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.0] - 2026-03-04
+
+- Remove the Copilot Proxy subsystem, including commands, settings, status-bar integration, worker process, and OpenAI/Anthropic route handling.
+- Remove AI provider/model-picker infrastructure and associated extension settings/commands.
+- Keep token counter and chunking utilities while narrowing network usage/docs to license validation and token-counter model metadata fetches.
+- Simplify extension build surface and dependency graph by dropping provider/proxy runtime dependencies.
+- Refresh README and privacy documentation to match the new feature set.
+
 ## [0.9.1] - 2026-02-27
 
 - Fix tab-copy commands in single-file windows by removing the hard workspace-folder requirement for tab discovery.
