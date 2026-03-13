@@ -4,6 +4,12 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.3] - 2026-03-13
+
+- Fix “Copy diff of selection” to derive selected diffs from whole-file diff hunks so additive changes are no longer misreported as replacements after line shifts.
+- Support selected diff copy from either diff pane while normalizing selections to touched lines in the active pane.
+- Skip clipboard writes when the selected diff lines do not contain any changes.
+
 ## [0.10.2] - 2026-03-13
 
 - Fix merged diff copy output so active-tab and selected diff copy flows emit only added and removed lines instead of duplicating unchanged context.
