@@ -4,6 +4,11 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.4] - 2026-03-18
+
+- Fix diff multi-selection copy so “Copy diff of selection” emits one Markdown code fence for the active file instead of one fence per selected range.
+- Limit copied diff output to the touched changed lines for pure add/remove runs while keeping replacement blocks paired as readable `-`/`+` groups.
+
 ## [0.10.3] - 2026-03-13
 
 - Fix “Copy diff of selection” to derive selected diffs from whole-file diff hunks so additive changes are no longer misreported as replacements after line shifts.
