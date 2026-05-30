@@ -4,6 +4,10 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.7] - 2026-05-30
+
+- Fix “Copy Selected Symbol as Markdown” so selected functions, classes, and other scoped symbols copy the full symbol body instead of a smart-selection fragment.
+
 ## [0.10.6] - 2026-05-30
 
 - Add “Copy Selected Symbol as Markdown” to copy the symbol/range VS Code considers relevant around the active cursor or selection.
