@@ -4,6 +4,11 @@ All notable changes to the "marktree" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.10.6] - 2026-05-30
+
+- Add “Copy Selected Symbol as Markdown” to copy the symbol/range VS Code considers relevant around the active cursor or selection.
+- Remove the `# Symbol:` heading from symbol Markdown output.
+
 ## [0.10.4] - 2026-03-18
 
 - Fix diff multi-selection copy so “Copy diff of selection” emits one Markdown code fence for the active file instead of one fence per selected range.
